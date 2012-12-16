@@ -1,0 +1,12 @@
+.throbber {
+  display: none;
+  text-align: center;
+}
+
+.spaghetti-loading > .throbber {
+  display: block;
+}
+
+.spaghetti-disabled {
+  padding: 20px;
+}
