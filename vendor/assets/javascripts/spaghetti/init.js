@@ -5,7 +5,6 @@ $(function() {
   
   function triggerHooks(hook) {
     fn = hook + '_spaghetti';
-    console.log('Triggering hook: ' + hook);
     if (typeof window.fn == 'function') {
       fireHook(fn);
     }
