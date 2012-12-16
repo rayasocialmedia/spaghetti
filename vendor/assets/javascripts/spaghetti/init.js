@@ -1,4 +1,15 @@
 $(function() {
+  $('.spaghetti-empty').each(function() {
+    $.ajax({
+      url: $(this).data('spaghetti-url') + '?page=' + $(this).data('spaghetti-next-page'),
+      type: 'get',
+      dataType: 'script',
+      success: function() {
+        $(window).sausage('draw');
+        $(this).removeClass('spaghetti-empty');
+      }
+    });
+  });
   function nearBottomOfPage() {
     return $(window).scrollTop() > $(document).height() - $(window).height() - 200;
   }
@@ -20,4 +31,4 @@ $(function() {
     }
   });
   $(window).sausage();
-}); 
+});

@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-.spaghetti-loading > .throbber {
+.spaghetti-loading .throbber {
   display: block;
 }
 
