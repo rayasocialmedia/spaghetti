@@ -11,7 +11,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["owahab@gmail.com"]
   gem.description   = %q{Spaghetti - Rails Endless Page}
   gem.summary       = %q{Spaghetti - Rails Endless Page}
-  gem.homepage      = "http://github.com/owahab/spaghetti"
+  gem.homepage      = "http://github.com/rayasocialmedia/spaghetti"
   gem.add_dependency 'jquery-rails', '>= 2.1'
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
