@@ -15,13 +15,11 @@ $(function() {
   }
 
   $('.spaghetti-empty').each(function() {
+    $(this).removeClass('spaghetti-empty');
     $.ajax({
       url: $(this).data('spaghetti-url') + '?page=' + $(this).data('spaghetti-next-page'),
       type: 'get',
-      dataType: 'script',
-      success: function() {
-        $(this).removeClass('spaghetti-empty');
-      }
+      dataType: 'script'
     });
   });
   
