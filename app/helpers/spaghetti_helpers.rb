@@ -1,7 +1,6 @@
 module SpaghettiHelpers
   def spaghetti name, path_or_items, options = {}
     output = ''.html_safe
-    puts path_or_items.class.name
     if path_or_items.class.name == 'String'
       output << "<div class=\"#{ name } spaghetti spaghetti-empty\" data-spaghetti-enabled=\"1\" data-spaghetti-url=\"#{ path_or_items }\" data-spaghetti-next-page=\"1\"><div class=\"#{ name }-items\"></div><div class=\"throbber\">#{ image_tag 'throbber.gif' }</div></div>".html_safe
     else

@@ -15,7 +15,9 @@ $(function() {
   }
 
   $('.spaghetti-empty').each(function() {
+    $(this).data('spaghetti-enabled', 0);
     $(this).removeClass('spaghetti-empty');
+    $(this).addClass('spaghetti-loading');
     $.ajax({
       url: $(this).data('spaghetti-url') + '?page=' + $(this).data('spaghetti-next-page'),
       type: 'get',
