@@ -1,4 +1,4 @@
-Copyright (c) 2012 Omar Abdel-Wahab
+Copyright (c) 2012 Raya Social Media
 
 MIT License
 

@@ -36,7 +36,7 @@ You need to have your `posts_controller` responding with the following `index.js
 
 Please see CONTRIBUTING.md for details.
 
-##Credits
+## Credits
 spaghetti was originally written by Omar Abdel-Wahab.
 
 ![RSM](http://rayasocialmedia.com/images/logo.png)
