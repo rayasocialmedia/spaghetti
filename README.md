@@ -34,8 +34,14 @@ You need to have your `posts_controller` responding with the following `index.js
 
 ## Contributing
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Please see CONTRIBUTING.md for details.
+
+##Credits
+spaghetti was originally written by Omar Abdel-Wahab.
+
+![RSM](http://rayasocialmedia.com/images/logo.png)
+
+spaghetti is maintained and funded by Raya Social Media.
+
+## License
+spaghetti is Copyright © 2013 Raya Social Media. It is free software, and may be redistributed under the terms specified in the LICENSE file.
