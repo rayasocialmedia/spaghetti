@@ -21,7 +21,10 @@ $(function() {
     $.ajax({
       url: $(this).data('spaghetti-url') + '?page=' + $(this).data('spaghetti-next-page'),
       type: 'get',
-      dataType: 'script'
+      dataType: 'script',
+      success: function() {
+        triggerHooks('post');
+      }
     });
   });
   
