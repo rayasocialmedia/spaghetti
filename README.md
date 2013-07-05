@@ -23,6 +23,12 @@ Make sure you add spaghetti JavaScript to your `application.js`:
     
     //= require spaghetti
 
+And spaghetti CSS to your `application.css`
+
+    *= require spaghetti
+
+A Throbber will be displayed to indicate that more items are being loaded, spaghetti uses throbber.gif file in assets/images
+
 Then add spaghetti markup to your view (example: posts/index.html):
     
     <%= spaghetti 'posts', posts_path %>

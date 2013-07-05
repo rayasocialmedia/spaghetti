@@ -18,10 +18,18 @@ $(function() {
     $(this).data('spaghetti-enabled', 0);
     $(this).removeClass('spaghetti-empty');
     $(this).addClass('spaghetti-loading');
+    if($(this).data('spaghetti-url').indexOf("?") === -1){
+        pageParameter = '?page=';
+    }else{
+        pageParameter = '&page=';
+    }
     $.ajax({
-      url: $(this).data('spaghetti-url') + '?page=' + $(this).data('spaghetti-next-page'),
+      url: $(this).data('spaghetti-url') + pageParameter + $(this).data('spaghetti-next-page'),
       type: 'get',
-      dataType: 'script'
+      dataType: 'script',
+      success: function() {
+        triggerHooks('post');
+      }
     });
   });
   
@@ -31,8 +39,13 @@ $(function() {
         triggerHooks('pre');
         $('.spaghetti').data('spaghetti-enabled', 0);
         $('.spaghetti').addClass('spaghetti-loading');
+        if($('.spaghetti').data('spaghetti-url').indexOf("?") === -1){
+        	pageParameter = '?page=';
+    	}else{
+        	pageParameter = '&page=';
+    	}
         $.ajax({
-          url: $('.spaghetti').data('spaghetti-url') + '?page=' + $('.spaghetti').data('spaghetti-next-page'),
+          url: $('.spaghetti').data('spaghetti-url') + pageParameter + $('.spaghetti').data('spaghetti-next-page'),
           type: 'get',
           dataType: 'script',
           success: function() {
