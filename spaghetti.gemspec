@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Spaghetti - Rails Endless Page}
   gem.homepage      = "http://github.com/rayasocialmedia/spaghetti"
   gem.add_dependency 'jquery-rails', '>= 2.1'
-  gem.add_dependency 'jquery-ui-rails', '4.0.1'
+  gem.add_dependency 'jquery-ui-rails', '>= 4.0.0'
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
